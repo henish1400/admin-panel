@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          #chart-container{
+          height: 500px; 
+}
+.raphael-group-85-dataset-axis-name
+{
+     display: none;
+}
+.raphael-group-104-dataset-axis-name,.raphael-group-89-dataset-axis-name,.raphael-group-108-dataset-axis-name
+{
+     display: none;
+}
+
+
+[pointer-events="bounding-box"] {
+    display: none
+}
+     </style>
+</head>
+<body>
+     
+    
+     
+<script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+<script src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+
+
+
+
+     <script>
+          const dataSource = {
+  chart: {
+   
+    xaxisname: "Country",
+    yaxisname: "Reserves (MMbbl)",
+    numbersuffix: "",
+    theme: "fusion",
+  },
+  data: [
+    {
+      label: "Venezuela",
+      value: "290",
+    },
+    {
+      label: "Saudi",
+      value: "260"
+    },
+    {
+      label: "Canada",
+      value: "180"
+    },
+    {
+      label: "Iran",
+      value: "140"
+    },
+    {
+      label: "Russia",
+      value: "115"
+    },
+    {
+      label: "UAE",
+      value: "100"
+    },
+    {
+      label: "US",
+      value: "30"
+    },
+    {
+      label: "China",
+      value: "30"
+    },
+    {
+      label: "China",
+      value: "30"
+    },
+    {
+      label: "China",
+      value: "30"
+    },
+    {
+      label: "China",
+      value: "30"
+    },
+    {
+      label: "China",
+      value: "30"
+    }
+  ]
+};
+
+FusionCharts.ready(function() {
+  var myChart = new FusionCharts({
+    type: "column2d",
+    renderAt: "chart-container",
+    width: "100%",
+    height: "100%",
+    dataFormat: "json",
+    dataSource
+  }).render();
+});
+     </script>
+
+</body>
+</html>

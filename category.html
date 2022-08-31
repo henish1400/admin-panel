@@ -1,0 +1,377 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKART DASHBORD</title>
+
+  <!-- favicon icon -->
+  <link rel="icon" href="image/favicon_icon.png">
+
+  <!-- botstrape version v 5.0 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!--owl carousel desfault  -->
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- owl carousel css -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- chart css -->
+  <link rel="stylesheet" href="css/chart.css">
+  <!-- media css -->
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body onload="load()">
+
+  <div class="themelightbg menu_background h-100">
+    <div class="custome_con">
+      <div class="row">
+
+        <!-- ===============================================================================
+                         start side bar menu
+=============================================================================== -->
+
+        <!-- start side bar menu -->
+        <div class="sidebar_left  display-block" id="style-4">
+          <a href="dashbord.html"><img src="image/logo.png" alt="logo" name="logo" class="pt-4" /></a>
+          <!--sidebar logo -->
+          <div class="">
+            <!--start dashbord menu -->
+            <div class="hedding_main d-flex align-items-center pt-4">
+              <a href="admin.html" id="dashbord_text" class="d-flex align-items-center">
+                <div class="dashbord_img_main  d-flex justify-content-center align-items-center " id="dashbord">
+                  <img src="image/dashbord_white.png" alt="dashboard" id="dashboard_icon">
+                </div>
+                <li class="ps-3  menu_name d-none"> Dashboard</li>
+              </a>
+            </div>
+            <div class="side_menu_main  ">
+              <div class="hedding_main d-flex align-items-center justify-content-between">
+                <a href="user.html" class="d-flex align-items-center">
+                  <div class="dashbord_img_main  d-flex justify-content-center align-items-center" id="user_img">
+                    <img src="image/dashbord_icon (12).png" alt="" id="user_icon">
+                    <img src="image/user_white.png" alt="" style="display: none;" id="user_icon_white">
+                  </div>
+                  <li class="ps-3 menu_name"> user</li>
+                </a>
+
+                <img src="image/dropdown_icon.png" alt="" class=" sub_menu_arrow ms-4 img-fluid  d-none "
+                  id="sub_menu_arrow" />
+
+              </div>
+              <ul class="sub_menu  p-0 m-0 ms-5 mt-2 d-none">
+                <li><a href="user-view.html" class="fw-bold ">seller View</a></li>
+              </ul>
+
+              <div class="hedding_main d-flex align-items-center justify-content-between">
+                <a href="saller.html" class="d-flex align-items-center">
+                  <div class="dashbord_img_main  d-flex justify-content-center align-items-center">
+                    <img src="image/dashbord_icon (1).png" alt="">
+                  </div>
+                  <li class="ps-3 menu_name text-start" id=""> saller</li>
+                </a>
+                <img src="image/dropdown_icon.png" alt="" class=" sub_menu_arrow ms-4 img-fluid   "
+                  id="sub_menu_arrow" />
+
+              </div>
+              <ul class="sub_menu  p-0 m-0 ms-5 d-none mt-2">
+                <li><a href="seller_view.html" class="fw-bold ">seller View</a></li>
+                <li><a href="seller_approval.html" class="fw-bold ">seller Approval</a></li>
+                <li><a href="unhold_seller.html" class="fw-bold ">Unhold Seller</a></li>
+              </ul>
+              <div class="hedding_main d-flex align-items-center justify-content-between">
+                <a href="category.html" class="d-flex align-items-center">
+                  <div class="dashbord_img_main  d-flex justify-content-center align-items-center">
+                    <img src="image/dashbord_icon (2).png" alt="">
+                  </div>
+                  <li class="ps-3  menu_name"> category</li>
+                </a>
+              </div>
+              <div class="hedding_main d-flex align-items-center position-relative justify-content-between   w-100">
+                <a href="dashbord.html" class="active_text d-flex align-items-center">
+                  <div class="dashbord_img_main   d-flex justify-content-center align-items-center active_menu">
+                    <!-- <img src="image/dashbord_icon (3).png" alt=""> -->
+                    <img src="image/product_white_icon.png" alt="">
+                  </div>
+                  <li class="ps-3  menu_name fw-bold active_text ">product</li>
+                </a>
+                <img src="image/dropdown_icon.png" alt="" class=" sub_menu_arrow img-fluid " id="sub_menu_arrow" />
+              </div>
+              <ul class="sub_menu  p-0 m-0 ms-5 d-none mt-2">
+                <li><a href="single-product-listing.html" class="fw-bold ">product Approval</a>
+                </li>
+              </ul>
+              <div class="hedding_main d-flex align-items-center justify-content-between">
+                <a href="order.html" class="d-flex align-items-center">
+                  <div class="dashbord_img_main  d-flex justify-content-center align-items-center">
+                    <img src="image/dashbord_icon (4).png" alt="">
+                  </div>
+                  <li class="ps-3  menu_name"> order</li>
+                </a>
+              </div>
+              <div class="hedding_main d-flex align-items-center justify-content-between">
+                <a href="logistic.html" class="d-flex align-items-center">
+                  <div class="dashbord_img_main  d-flex justify-content-center align-items-center">
+                    <img src="image/dashbord_icon (5).png" alt="">
+                  </div>
+                  <li class="ps-3  menu_name">
+                    logistic</li>
+                </a>
+              </div>
+              <div class="hedding_main d-flex align-items-center justify-content-between">
+                <a href="payment.html" class="d-flex align-items-center">
+                  <div class="dashbord_img_main  d-flex justify-content-center align-items-center">
+                    <img src="image/dashbord_icon (6).png" alt="">
+                  </div>
+                  <li class="ps-3  menu_name">
+                    payment</li>
+                </a>
+              </div>
+              <div class="hedding_main d-flex align-items-center justify-content-between">
+                <a href="marketting.html" class="d-flex align-items-center">
+                  <div class="dashbord_img_main  d-flex justify-content-center align-items-center">
+                    <img src="image/dashbord_icon (7).png" alt="">
+                  </div>
+                  <li class="ps-3  menu_name">
+                    marketing</li>
+                </a>
+              </div>
+              <div class="hedding_main d-flex align-items-center justify-content-between">
+                <a href="wallet.html" class="d-flex align-items-center">
+                  <div class="dashbord_img_main  d-flex justify-content-center align-items-center">
+                    <img src="image/dashbord_icon (8).png" alt="">
+                  </div>
+                  <li class="ps-3  menu_name">
+                    wallet</li>
+                </a>
+              </div>
+              <div class="hedding_main d-flex align-items-center justify-content-between">
+                <a href="referral.html" class="d-flex align-items-center">
+                  <div class="dashbord_img_main  d-flex justify-content-center align-items-center">
+                    <img src="image/dashbord_icon (9).png" alt="">
+                  </div>
+                  <li class="ps-3  menu_name">
+                    Referral</li>
+                </a>
+              </div>
+              <div class="hedding_main d-flex align-items-center justify-content-between">
+                <a href="report.html" class="d-flex align-items-center">
+                  <div class="dashbord_img_main  d-flex justify-content-center align-items-center">
+                    <img src="image/dashbord_icon (10).png" alt="">
+                  </div>
+                  <li class="ps-3 menu_name ">
+                    report</li>
+                </a>
+              </div>
+              <div class="hedding_main d-flex align-items-center justify-content-between">
+                <a href="support.html" class="d-flex align-items-center">
+                  <div class="dashbord_img_main  d-flex justify-content-center align-items-center">
+                    <img src="image/dashbord_icon (11).png" alt="">
+                  </div>
+                  <li class="ps-3  menu_name">
+                    support</li>
+                </a>
+              </div>
+            </div>
+            <!--end dashbord menu -->
+          </div>
+        </div>
+        <!-- end side bar menu -->
+
+        <!-- ===============================================================================
+                         end side bar menu
+=============================================================================== -->
+
+        <!-- ===============================================================================
+                         start dashbord
+=============================================================================== -->
+
+        <!--strat dashbord product view -->
+        <div class="main_content menu_div position-relative mt-5">
+          <!-- start header -->
+          <div class="cart_top_wrap ">
+            <!-- <div class="logo">
+                                  <a href="#0">
+                                      <img src="assets/image/dashborad_logo.png" alt="logo">
+                                  </a>
+                              </div> -->
+            <ul>
+              <li>
+                <div class="top_right_icon">
+                  <img src="image/search_big_icon.png" alt="icon">
+                </div>
+              </li>
+              <li>
+                <div class="top_right_icon cart_wrap">
+                  <img src="image/cart.png" alt="icon">
+                </div>
+              </li>
+              <li>
+                <div class="top_right_icon notification_wrap">
+                  <img src="image/bell.png" alt="icon">
+                </div>
+              </li>
+              <li>
+                <div class="top_right_icon" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <img src="image/account.png" alt="icon">
+                </div>
+              </li>
+              <li>
+                <a href="#0" class="menu_trigger d-lg-none">
+                  <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.72577 6.50537L0.755156 12.1304L4.50093 6.50397L0.75 0.880371L8.72577 6.50537Z"
+                      fill="#FFCE55" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+
+                    <div class="close_profile_img">
+                      <button type="button" class="btn-close p-0 m-0" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="profile_model_info">
+                      <div>
+                        <div class="profile_img_round_main">
+                          <img src="image/account.png" class="profile_img_round" alt="">
+                        </div>
+                        <div class="text-center my-3">
+                          <h4 class="text-dark">DoNotDisturb</h4>
+                          <p class="text-dark py-2">Lorem ipsum dolor sit amet.</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-body modal-body-cancel text-center">
+                    <a class="logout" href="#">Logout</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!--End profile Model -->
+          </div>
+          <!-- end header -->
+
+          <!--start menu arrow -->
+          <div class="sidebar_menu_arrow mt-3">
+            <div class="menu_arrow" id="slider_arrow">
+              <img src="image/dashbord_arrow.png" alt="slider arrow" class="position-fixed">
+            </div>
+          </div>
+          <!--end menu arrow -->
+
+          <ul class="category_main">
+            <div class="category_hedding d-flex align-items-center justify-content-between pt-5 ps-5">
+              <a href="category.html" class="category_active"><h5 class="">Category</h5></a>
+              <a href="add_category.html"><h5 class="">Add category</h5></a>
+            </div>
+            <ul class="start_category d-flex mt-5">
+              <div class="category_colum category_first_colum">
+                <div class="main_category ">
+                  <li class="d-inline ms-5 ps-4">Fashion</li><span class="d-inline ms-5 ps-3"><img
+                      src="image/category_arrow.png" alt=""></span>
+                </div>
+                <li class="">Electronics</li>
+                <li class="">Home</li>
+                <li class="">Beauty & Personal Care</li>
+                <li class="">Men's Grooming</li>
+                <li class=""> Nutrition & Health Care</li>
+                <li class=""> Baby Care</li>
+                <li class=""> Toys & School Supplies</li>
+                <li class=""> Sports & Fitness</li>
+                <li class=""> Books & Music</li>
+              </div>
+              <div class="category_colum category_second_colum d-none">
+                <div class="main_category ">
+                  <li class="d-inline ms-5 ps-4">Fashion</li><span class="d-inline ms-5 ps-3"><img
+                      src="image/category_arrow.png" alt=""></span>
+                </div>
+                <li class="">Electronics</li>
+                <li class="">Home</li>
+                <li class="">Beauty & Personal Care</li>
+                <li class="">Men's Grooming</li>
+                <li class=""> Nutrition & Health Care</li>
+                <li class=""> Baby Care</li>
+                <li class=""> Toys & School Supplies</li>
+                <li class=""> Sports & Fitness</li>
+                <li class=""> Books & Music</li>
+              </div>
+              <div class="category_colum category_third_colum d-none">
+                <div class="main_category ">
+                  <li class="d-inline ms-5 ps-4">Fashion</li><span class="d-inline ms-5 ps-3"><img
+                      src="image/category_arrow.png" alt=""></span>
+                </div>
+                <li class="">Electronics</li>
+                <li class="">Home</li>
+                <li class="">Beauty & Personal Care</li>
+                <li class="">Men's Grooming</li>
+                <li class=""> Nutrition & Health Care</li>
+                <li class=""> Baby Care</li>
+                <li class=""> Toys & School Supplies</li>
+                <li class=""> Sports & Fitness</li>
+                <li class=""> Books & Music</li>
+              </div>
+            </ul>
+        </div>
+
+
+      </div>
+      <!--end dashbord product view -->
+
+      <!-- ===============================================================================
+                         end dashbord
+=============================================================================== -->
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- j quary library file -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+
+  <!-- chart js -->
+  <script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+
+  <!-- chart theme js -->
+  <script src="js/fusioncharts.theme.fusion.js"></script>
+
+  <!-- chart custome js -->
+  <script src="js/chart.js"></script>
+
+  <!-- chart js v 2.5.0 -->
+  <script src="js/Chart.min.js"></script>
+
+  <!-- botstrape version v 5.0 -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- doughnut chart js -->
+  <script src="js/anychart-core.min.js"></script>
+
+  <!-- doughnut chart js -->
+  <script src="js/anychart-pie.min.js"></script>
+
+  <!--owl carousel js  -->
+  <script src="js/owl.carousel.min.js"></script>
+
+  <!-- scrript js -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
