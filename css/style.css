@@ -2647,7 +2647,7 @@ path[data-ac-wrapper-id="7"]:hover
 
 .camping_scroll
 {
-  overflow: scroll;
+  overflow: auto !important;
   height: 1000px;
 }
 .camping_scroll_main
@@ -2655,7 +2655,7 @@ path[data-ac-wrapper-id="7"]:hover
   
   height: 1000px;
   border-radius: 5px;
-  overflow: hidden;
+  overflow: auto;
   margin-bottom:0px;
 }
 .total_camping_text{
@@ -3159,4 +3159,43 @@ path[data-ac-wrapper-id="7"]:hover
 }
 /* ===============================================================================
                                    end support
+=============================================================================== */
+/* ===============================================================================
+                            start all page table css
+=============================================================================== */
+/* .table-hedding{
+  z-index: 1;
+  position: fixed;
+  width: 90%;
+  background-color: white;
+} */
+.tableFixHead          { overflow: auto; height: 100px; background-color: var(--background) !important;}
+.tableFixHead thead th { position: sticky; top: 0; z-index: 1; }
+.table>:not(:last-child)>:last-child>*{
+  background-color: #ABB4C3;
+  border-bottom: none;
+}
+.table-body{
+  height: 10px !important;
+  overflow: scroll;
+}
+tbody > tr{
+  padding: 20px 0px !important;
+  background: transparent !important;
+  border: 10px solid transparent;
+  outline: none;
+}
+.table-warapper{
+  background-color: #ABB4C3 !important;
+}
+.table-striped>tbody>tr:nth-of-type(odd),.table-striped>tbody>tr:nth-of-type(even) {
+  --bs-table-accent-bg: #fff;
+}
+
+/* Just common table stuff. Really. */
+table  { border-collapse: collapse; width: 100%; }
+th, td { padding: 8px 16px; }
+
+/* ===============================================================================
+                            end all page table css
 =============================================================================== */
