@@ -2368,16 +2368,8 @@ border-radius: 20px;
   justify-content: center;
   border-right: 2px solid transparent;
 }
-.scroll_marketing 
-{
-  box-shadow: 010px 4px 4px rgb(0 0 0)!important;
-  height: 550px;
 
-}
-.marketing_box ul li 
-{
-  border: transparent !important;
-}
+
 .header_marketing
 {
   border-bottom-right-radius: 0px !important;
@@ -2652,12 +2644,12 @@ path[data-ac-wrapper-id="7"]:hover
 }
 .camping_scroll_main
 {
-  
   height: 1000px;
   border-radius: 5px;
   overflow: auto;
   margin-bottom:0px;
 }
+
 .total_camping_text{
   line-height: 40px;
 } 
@@ -3163,12 +3155,7 @@ path[data-ac-wrapper-id="7"]:hover
 /* ===============================================================================
                             start all page table css
 =============================================================================== */
-/* .table-hedding{
-  z-index: 1;
-  position: fixed;
-  width: 90%;
-  background-color: white;
-} */
+/*begin:: table default css */
 .tableFixHead          { overflow: auto; height: 100px; background-color: var(--background) !important;}
 .tableFixHead thead th { position: sticky; top: 0; z-index: 1; }
 .table>:not(:last-child)>:last-child>*{
@@ -3179,23 +3166,74 @@ path[data-ac-wrapper-id="7"]:hover
   height: 10px !important;
   overflow: scroll;
 }
+.table-body tr td{
+  align-items: center;
+  padding: 10px 10px;
+}
 tbody > tr{
   padding: 20px 0px !important;
   background: transparent !important;
-  border: 10px solid transparent;
+  border: 10px solid transparent ;
   outline: none;
 }
 .table-warapper{
   background-color: #ABB4C3 !important;
 }
+.table-warapper-seller
+{
+  background-color: #F9FAFA !important;
+}
 .table-striped>tbody>tr:nth-of-type(odd),.table-striped>tbody>tr:nth-of-type(even) {
   --bs-table-accent-bg: #fff;
 }
 
+
 /* Just common table stuff. Really. */
 table  { border-collapse: collapse; width: 100%; }
 th, td { padding: 8px 16px; }
+/*end:: table default css */
 
+/* single product listing */
+.single-product-table-height{
+  height: 550px;
+  border-radius: 5px;
+  overflow: auto;
+  margin-bottom:0px;
+}
+.logistic-table-height{
+  height: 600px;
+  border-radius: 5px;
+  overflow: auto;
+  margin-bottom:0px;
+}
+.scroll_marketing 
+{
+  height: 550px;
+  border-radius: 5px;
+  overflow: auto;
+  margin-bottom:0px;
+}
+/* return order */
+.return-order-button button{
+  padding: 5px 20px;
+  color: var(--background);
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  font-size: 14px;
+  display: block;
+}
+.return-order-button button a{
+  color: #fff;
+}
+.return-order-button button:first-child{
+  background-color: #A2CDC5;
+}
+.return-order-button button:last-child{
+  background-color: #F8B6B6;
+  margin-top: 5px;
+}
 /* ===============================================================================
                             end all page table css
 =============================================================================== */

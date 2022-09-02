@@ -5,33 +5,33 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>ACCEPT-ORDER</title>
+     <title>RETURN ORDER</title>
 
-     <!-- favicon icon -->
-     <link rel="icon" href="image/favicon_icon.png">
+     
+      <!-- favicon icon -->
+      <link rel="icon" href="image/favicon_icon.png">
 
-     <!-- botstrape version v 5.0 -->
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-     <!--owl carousel desfault  -->
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-     <!-- owl carousel css -->
-     <link rel="stylesheet" href="css/owl.carousel.min.css">
-
-     <!-- style css -->
-     <link rel="stylesheet" href="css/style.css">
-
-
-     <!-- chart css -->
-     <link rel="stylesheet" href="css/chart.css">
-     <!-- media css -->
-     <link rel="stylesheet" href="css/media.css">
+      <!-- botstrape version v 5.0 -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+      <!--owl carousel desfault  -->
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  
+      <!-- owl carousel css -->
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+  
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+  
+      <!-- chart css -->
+      <link rel="stylesheet" href="css/chart.css">
+      <!-- media css -->
+      <link rel="stylesheet" href="css/media.css">
 </head>
 
-<body >
+<body onload="load()">
 
-     <div class="themelightbg menu_background ">
+     <div class="themelightbg menu_background h100vh">
           <div class="custome_con">
                <div class="row">
 <!-- ===============================================================================
@@ -62,9 +62,9 @@
                                                   <img src="image/user_white.png" alt="" style="display: none;"
                                                        id="user_icon_white">
                                              </div>
-                                             <li class="ps-3 menu_name"> user</li>
+                                             <li class="ps-3 menu_name"> user </li>
                                         </a>
-                                        
+                                       
                                         <img src="image/dropdown_icon.png" alt="" class=" sub_menu_arrow ms-4 img-fluid   " id="sub_menu_arrow" />
 
                                    </div>
@@ -94,8 +94,8 @@
                                                   class="dashbord_img_main  d-flex justify-content-center align-items-center">
                                                   <img src="image/dashbord_icon (2).png" alt="">
                                              </div>
-                                             <li class="ps-3  menu_name"> category </li>
-                                        </a>
+                                             <li class="ps-3  menu_name"> category</li>
+                                        </a> 
                                    </div>
                                    <div class="hedding_main d-flex align-items-center position-relative   w-100">
                                         <a href="dashbord.html" class="">
@@ -110,16 +110,16 @@
                                              id="sub_menu_arrow" />
                                    </div>
                                    <ul class="sub_menu  p-0 m-0 ms-5 mt-2">
-                                        <li><a href="single-product-listing.html" class="fw-bold ">product Approval</li></a>
-                                        
+                                        <li><a href="single-product-listing.html" class="fw-bold ">product Approval</a>
+                                        </li>
                                    </ul>
                                    <div class="hedding_main d-flex align-items-center ">
-                                        <a href="order.html" class="active_text">
+                                        <a href="order.html" class=" active_text  ">
                                              <div
                                                   class="dashbord_img_main  d-flex justify-content-center align-items-center active_menu">
                                                   <img src="image/dashbord_icon (4).png" alt="">
                                              </div>
-                                             <li class="ps-3  menu_name active_text"> order</li>
+                                             <li class="ps-3  menu_name"> order</li>
                                         </a>
                                         <img src="image/dropdown_icon.png" alt="" class="sub_menu_arrow order_sub_menu_arrow  img-fluid id="sub_menu_arrow" />
                                    </div>
@@ -155,7 +155,7 @@
                                              <li class="ps-0  menu_name  ms-3">
                                                   marketing</li>
                                         </a>
-                                        <img src="image/dropdown_icon.png" alt="" class="sub_menu_arrow marketing_sub_menu_arrow  img-fluid id="sub_menu_arrow" />
+                                        <img src="image/dropdown_icon.png" alt="" class="sub_menu_arrow marketing_sub_menu_arrow  img-fluid   " id="sub_menu_arrow" />
 
                                    </div>
                                    <ul class="sub_menu  p-0 m-0 ms-5 mt-2">
@@ -217,9 +217,8 @@
 
                     <!--strat map -->
                     <div class="main_content order_map menu_div position-relative mt-5">
-                         
-                         <!-- start header -->
-                         <div class="cart_top_wrap">
+                          <!-- start header -->
+                          <div class="cart_top_wrap">
                               <!-- <div class="logo">
                                   <a href="#0">
                                       <img src="assets/image/dashborad_logo.png" alt="logo">
@@ -421,130 +420,132 @@
                                         <tr class=" ">
                                              <th> Sr. No.</th>
                                              <th> ORDER_ID</th>
+                                             <th>SKU_ID</th>
                                              <th>Products_ID</th>
-                                             <th>Main Category</th>
-                                             <th> Seller Name</th>
-                                             <th>State</th>
+                                             <th>Delivary partner</th>
+                                             <th> MRP</th>
+                                             <th>Seller Name</th>
+                                             <th> State</th>
                                              <th> Date</th>
                                         </tr>  
                                    </thead>
                                    <tbody class="table-body force-overflow">                  
                                         <tr class="">
-                                             
                                              <td>1</td>
                                              <td>231567951365</td>
                                              <td>231567951365</td>
                                              <td>Fashion</td>
+                                             <td>Fashion</td>
                                              <td>abcdefg</td>
+                                             <td>Gujrat</td>
                                              <td>Gujrat</td>
                                              <td>dd/mm/yyyy</td>
                                         </tr>                                   
                                         <tr class="">
-                                             
                                              <td>1</td>
                                              <td>231567951365</td>
                                              <td>231567951365</td>
                                              <td>Fashion</td>
+                                             <td>Fashion</td>
                                              <td>abcdefg</td>
+                                             <td>Gujrat</td>
                                              <td>Gujrat</td>
                                              <td>dd/mm/yyyy</td>
                                         </tr>                                   
                                         <tr class="">
-                                             
                                              <td>1</td>
                                              <td>231567951365</td>
                                              <td>231567951365</td>
                                              <td>Fashion</td>
+                                             <td>Fashion</td>
                                              <td>abcdefg</td>
+                                             <td>Gujrat</td>
                                              <td>Gujrat</td>
                                              <td>dd/mm/yyyy</td>
                                         </tr>                                   
                                         <tr class="">
-                                             
                                              <td>1</td>
                                              <td>231567951365</td>
                                              <td>231567951365</td>
                                              <td>Fashion</td>
+                                             <td>Fashion</td>
                                              <td>abcdefg</td>
+                                             <td>Gujrat</td>
                                              <td>Gujrat</td>
                                              <td>dd/mm/yyyy</td>
                                         </tr>                                   
                                         <tr class="">
-                                             
                                              <td>1</td>
                                              <td>231567951365</td>
                                              <td>231567951365</td>
                                              <td>Fashion</td>
+                                             <td>Fashion</td>
                                              <td>abcdefg</td>
+                                             <td>Gujrat</td>
                                              <td>Gujrat</td>
                                              <td>dd/mm/yyyy</td>
                                         </tr>                                   
                                         <tr class="">
-                                             
                                              <td>1</td>
                                              <td>231567951365</td>
                                              <td>231567951365</td>
                                              <td>Fashion</td>
+                                             <td>Fashion</td>
                                              <td>abcdefg</td>
+                                             <td>Gujrat</td>
                                              <td>Gujrat</td>
                                              <td>dd/mm/yyyy</td>
                                         </tr>                                   
                                         <tr class="">
-                                             
                                              <td>1</td>
                                              <td>231567951365</td>
                                              <td>231567951365</td>
                                              <td>Fashion</td>
+                                             <td>Fashion</td>
                                              <td>abcdefg</td>
+                                             <td>Gujrat</td>
                                              <td>Gujrat</td>
                                              <td>dd/mm/yyyy</td>
                                         </tr>                                   
                                         <tr class="">
-                                             
                                              <td>1</td>
                                              <td>231567951365</td>
                                              <td>231567951365</td>
                                              <td>Fashion</td>
+                                             <td>Fashion</td>
                                              <td>abcdefg</td>
+                                             <td>Gujrat</td>
                                              <td>Gujrat</td>
                                              <td>dd/mm/yyyy</td>
                                         </tr>                                   
                                         <tr class="">
-                                             
                                              <td>1</td>
                                              <td>231567951365</td>
                                              <td>231567951365</td>
                                              <td>Fashion</td>
+                                             <td>Fashion</td>
                                              <td>abcdefg</td>
+                                             <td>Gujrat</td>
                                              <td>Gujrat</td>
                                              <td>dd/mm/yyyy</td>
                                         </tr>                                   
                                         <tr class="">
-                                             
                                              <td>1</td>
                                              <td>231567951365</td>
                                              <td>231567951365</td>
                                              <td>Fashion</td>
-                                             <td>abcdefg</td>
-                                             <td>Gujrat</td>
-                                             <td>dd/mm/yyyy</td>
-                                        </tr>                                   
-                                        <tr class="">
-                                             
-                                             <td>1</td>
-                                             <td>231567951365</td>
-                                             <td>231567951365</td>
                                              <td>Fashion</td>
                                              <td>abcdefg</td>
                                              <td>Gujrat</td>
+                                             <td>Gujrat</td>
                                              <td>dd/mm/yyyy</td>
                                         </tr>                                   
+                                                                    
                                    </tbody>                                  
                               </table>
                          </div>
                          <!--End::table  -->
 
-                         <!-- start pagination -->
                          <div class="pagination_and_button d-flex justify-content-center mt-5  align-items-center">
                             <nav aria-label="Page navigation example w-50 mb-0">
                                  <ul
@@ -568,56 +569,48 @@
                                  </ul>
                             </nav>
                            
-                        </div>
-                         <!-- end pagination -->
-
-                         <!-- start aceept order button -->
-                         <div class="accept_order_button text-end mx-5 mb-5">
-                             <a href="#">Register Order</a>
-                         </div>
-                         <!-- end aceept order button -->
-
+                           </div>
                     </div>
                     <!--end map -->
 
-<!-- ===============================================================================
+                    <!-- ===============================================================================
                          end dashbord
-=============================================================================== -->
+               =============================================================================== -->
                </div>
           </div>
      </div>
 
 
 
-     <!-- j quary library file -->
-     <script src="js/jquery-3.6.0.min.js"></script>
+      <!-- j quary library file -->
+      <script src="js/jquery-3.6.0.min.js"></script>
 
-     <!-- chart js -->
-     <script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
- 
-     <!-- chart theme js -->
-     <script src="js/fusioncharts.theme.fusion.js"></script>
- 
-     <!-- chart custome js -->
-     <script src="js/chart.js"></script>
- 
-     <!-- chart js v 2.5.0 -->
-     <script src="js/Chart.min.js"></script>
- 
-     <!-- botstrape version v 5.0 -->
-     <script src="js/bootstrap.bundle.min.js"></script>
- 
-     <!-- doughnut chart js -->
-     <script src="js/anychart-core.min.js"></script>
- 
-     <!-- doughnut chart js -->
-     <script src="js/anychart-pie.min.js"></script>
- 
-     <!--owl carousel js  -->
-     <script src="js/owl.carousel.min.js"></script>
- 
-     <!-- scrript js -->
-     <script src="js/script.js"></script>
+      <!-- chart js -->
+      <script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+  
+      <!-- chart theme js -->
+      <script src="js/fusioncharts.theme.fusion.js"></script>
+  
+      <!-- chart custome js -->
+      <script src="js/chart.js"></script>
+  
+      <!-- chart js v 2.5.0 -->
+      <script src="js/Chart.min.js"></script>
+  
+      <!-- botstrape version v 5.0 -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+  
+      <!-- doughnut chart js -->
+      <script src="js/anychart-core.min.js"></script>
+  
+      <!-- doughnut chart js -->
+      <script src="js/anychart-pie.min.js"></script>
+  
+      <!--owl carousel js  -->
+      <script src="js/owl.carousel.min.js"></script>
+  
+      <!-- scrript js -->
+      <script src="js/script.js"></script>
 
 </body>
 
