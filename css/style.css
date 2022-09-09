@@ -2194,34 +2194,9 @@ border-radius: 20px;
                         start user view
 ================================================================================ */
 
-.search_email_mobile
-{
-  padding: 10px;
-  border-radius: 25px;
-  border: 2px solid var(--themedarkbg);
-  outline: none;
-  padding-left: 55px; 
-  width: 340px;
-}
-.search_email_mobile::placeholder
-{
-  color: #252121;
-}
-.ModalCarrot::after{
-  content:url('../image/search.png'); /* with class ModalCarrot ??*/
-  position:relative; /*or absolute*/
-  z-index:100000; /*a number that's more than the modal box*/
-  height: 25px;
-  width: 25px;
-  left:0;
-  top:10px;
-}
 
-.ModalCarrot{
-   position:absolute;
-   left:1%;
-   top:50%;
-}
+
+
 .dropdown_btn_user_view
 {
   border: 2px solid var(--themedarkbg);
@@ -3311,6 +3286,28 @@ th, td { padding: 8px 16px; }
   border-radius: 25px;
   border: none;
   padding: 0 10px;
+}
+
+/* All page search  */
+
+.ModalCarrot{
+  position:absolute;
+  left:10px;
+  top:8px;
+  z-index: 1;
+}
+.search_commn::placeholder{
+ color: #fff;
+ font-size: 18px;
+}
+.search_commn:focus{
+ border: none;
+ outline: none;
+}
+.search_commn{
+ padding-left: 50px;
+ font-size: 18px;
+ border: none;
 }
 
 
